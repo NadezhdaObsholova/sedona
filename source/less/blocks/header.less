@@ -1,16 +1,19 @@
 .header {
+  min-width: inherit;
   &__title,
   &__text {
     text-align: center;
   }
 
-  &__img {
-    display: block;
-    height: 389px;
-    width: 320px;
-    background-image: url("../../img/main-img-phone.jpg");
-    background-position: center;
+}
+
+.header__img {
+  height: 389px;
+  background-color: @gray;
+
+
+  @media (min-width: @tablet-width) {
+    height: 518px;
+
   }
-
-
 }
