@@ -1,5 +1,6 @@
-.header {
+.intro {
   min-width: inherit;
+
   &__title,
   &__text {
     text-align: center;
@@ -7,13 +8,29 @@
 
 }
 
-.header__img {
+.intro__img {
+  display: flex;
+  justify-content: center;
   height: 389px;
-  background-color: @gray;
+  background-color: @blue;
+  background-image: url("../../img/main-intro-img.jpg");
+  background-position: center;
+  background-size: cover;
 
 
   @media (min-width: @tablet-width) {
     height: 518px;
+
+  }
+}
+
+.main-intro-text {
+  height: 214px;
+  margin-top: 90px;
+
+  @media (min-width: @tablet-width) {
+    height: 350px;
+    margin-top: 78px;
 
   }
 }
