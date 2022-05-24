@@ -1,29 +1,44 @@
+.advantages {
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__list--top-row,
+  .advantages__list--bottom-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .adv-img-top {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  .adv-img-bottom {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .adv-text-bottom {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+}
+
+
 .advantage__item:first-child {
   margin: 0;
   padding: 38px 12px;
   background-color: @blue;
   color: @white;
-  text-align: center;
 }
-
-.advantages {
-
-  &__list--top-row,
-  &__list--bottom-row {
-    text-align: center;
-  }
-}
-
-.advantages__list--bottom-row:not(first-child) {
-  background-color: @gray;
-}
-
-.adv-align {
-  text-align: start;
-  padding-left: 70px;
-  padding-right: 21px;
-}
-
 
 .advantage__item__title {
   font-weight: 700;
@@ -45,10 +60,62 @@
   background-size: cover;
 }
 
-
-.advantage__img__first-row{
-background-image: url("../../img/adv-row-first.jpg");
+.advantage__img__first-row {
+  background-image: url("../../img/adv-row-first.jpg");
 }
-.advantage__img__second-row{
+
+.advantage__img__second-row {
   background-image: url("../../img/adv-row-second.jpg");
+}
+
+
+@media (max-width: @mobil-width-only) {
+  .adv-align {
+    text-align: start;
+    padding-left: 70px;
+    padding-right: 21px;
   }
+}
+
+.adv-house::before {
+  content: url("../../img/icon-house.svg");
+  position: absolute;
+  width: 39px;
+  height: 37px;
+  left: 12px;
+  @media (min-width: @tablet-width) {
+    width: 75px;
+    height: 72px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.adv-food::before {
+  content: url("../../img/icon-burger.svg");
+  position: absolute;
+  width: 40px;
+  height: 35px;
+  left: 12px;
+}
+
+.adv-gift::before {
+  content: url("../../img/icon-gift.svg");
+  position: absolute;
+  width: 32px;
+  height: 38px;
+  left: 12px;
+}
+
+.advantages__list--bottom-row:not(:first-child) {
+  background-color: @gray;
+}
+
+
+.adv-border {
+  @media (max-width: @mobil-width-only) {
+    margin-left: 18px;
+    margin-right: 18px;
+    border-bottom: 1px solid #D6D6D6;
+  }
+}
