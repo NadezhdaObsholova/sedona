@@ -1,48 +1,73 @@
 .page-header {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.main-nav {
-  position: relative;
-  height: 276px;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  z-index: 1;
-
+.main-nav.main-nav--nojs {
+  display: block;
   @media (min-width: @tablet-width) {
     height: 56px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
+  @media (min-width: @tablet-width) {
+    .main-nav {
+      display: block;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width: @mobil-width-only) {
+  .main-nav {
+    display: none;
+  }
+
+  .button--open-menu {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+  }
+  .button--close-menu {
+    display: none;
+  }
+}
+@media (min-width: @tablet-width) {
+  .button--open-menu {
+    display: none;
+  }
+  .button--close-menu {
+    display: none;
+  }
+}
 
 .page-header__logo {
   width: 102px;
   height: 84px;
   background-image: url("../../img/logo.svg");
   margin: 0 auto;
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    z-index: -1;
+    z-index: 1;
   }
 
   @media (min-width: @desktop-width) {
     width: 187px;
     height: 96px;
     background-image: url("../../img/logo-desktop.svg");
-  }
-}
-
-.main-nav__wrapper {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: space-between;
   }
 }
 
@@ -73,7 +98,7 @@
 
 .main-nav__list:nth-child(2) {
   @media (min-width: @tablet-width) {
-    flex-direction: row-reverse;
+    flex-direction: row;
   }
 }
 
@@ -86,9 +111,7 @@
 
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     box-shadow: none;
     width: 153px;
     height: 56px;
@@ -99,7 +122,8 @@
   }
 }
 
-.button--close-menu {
+.button--close-menu.main-nav--nojs {
+  display: block;
   position: absolute;
   top: 17px;
   right: 20px;
@@ -108,14 +132,14 @@
   border: none;
   background-color: transparent;
   padding: 0;
-
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
     display: none;
   }
 }
 
-.button--open-menu {
+.button--open-menu.main-nav--nojs {
   position: absolute;
   top: 237px;
   right: 20px;
@@ -124,7 +148,6 @@
   border: none;
   background-color: transparent;
   padding: 0;
-
 
   @media (min-width: @tablet-width) {
     display: none;
