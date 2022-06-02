@@ -9,7 +9,6 @@
 }
 
 @media (min-width: @tablet-width) {
-
   .advantages__list--top-row,
   .advantages__list--bottom-row {
     display: grid;
@@ -50,8 +49,6 @@
   }
 }
 
-
-
 .advantage__item:first-child {
   margin: 0;
   padding: 38px 12px;
@@ -85,7 +82,6 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-
 }
 
 .advantage__item__text {
@@ -102,48 +98,7 @@
 .advantage__img__second-row {
   display: block;
   height: 256px;
-  /* background-repeat: no-repeat;
-  background-size: cover;*/
 }
-
-/* УБРАТЬ ОТСЮДА
-.advantage__img__first-row {
-  background-image: url("../../img/adv-row-first-800-@1x.jpg");
-  background-size: cover;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../../img/adv-row-first-800-@2x.jpg");
-    background-size: cover;
-  }
-  @media (min-resolution: 3dppx) {
-    background-image: url("../../img/adv-row-first800-@3x.jpg");
-    background-size: cover;
-  }
-}
-
-.advantage__img__second-row {
-  background-image: url("../../img/adv-row-second@1x.jpg");
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../../img/adv-row-second@2x.jpg");
-    background-size: cover;
-  }
-  @media (min-resolution: 3dppx) {
-    background-image: url("../../img/adv-row-second@3x.jpg");
-    background-size: cover;
-  }
-
-}
-
-ДО СЮДА */
-
-
-
-
-
-
-
-
 
 .adv-img-wrapper {
   position: relative;
@@ -158,28 +113,8 @@
 }
 
 .advantage__img {
-
-
-  width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .adv-align {
   position: relative;
@@ -206,9 +141,12 @@
 
 .adv-border {
   @media (max-width: @mobil-width-only) {
-    padding-left: 26px;
-    padding-right: 26px;
+    /*margin-left: 26px;
+    margin-right: 26px;*/
     border-bottom: 1px solid #D6D6D6;
+    padding-top: 7px;
+    padding-bottom: 4px;
+
   }
 }
 
