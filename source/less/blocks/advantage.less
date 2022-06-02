@@ -51,7 +51,7 @@
 
 .advantage__item:first-child {
   margin: 0;
-  padding: 38px 12px;
+  padding: 16px 12px;
   background-color: @blue;
   color: @white;
 
@@ -64,6 +64,16 @@
     padding-left: 53px;
     padding-right: 53px;
   }
+}
+
+.advantage__item__title {
+  margin-bottom: 8px;
+}
+.advantage__item__number {
+  margin-top: 0;
+}
+.advantage__item__text {
+  margin-bottom: 24px;
 }
 
 .adv-text-bottom {
@@ -82,12 +92,19 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 24px;
+  }
+
 }
 
 .advantage__item__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .advantages__list--bottom-row .advantage__item:not(:first-child) {
@@ -103,7 +120,6 @@
 .adv-img-wrapper {
   position: relative;
   overflow: hidden;
-
   height: 256px;
 }
 
@@ -113,21 +129,26 @@
 }
 
 .advantage__img {
+  position: absolute;
+  transform: translateX(-50%);
   object-fit: contain;
 }
 
 .adv-align {
   position: relative;
+  margin-top: 30px;
 
   @media (max-width: @mobil-width-only) {
     text-align: start;
     padding-left: 70px;
     padding-right: 21px;
+
   }
 
   @media (min-width: @tablet-width) {
     padding-left: 31px;
     padding-right: 31px;
+    margin-top: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -138,6 +159,12 @@
   }
 }
 
+.adv-align .advantage__item__title {
+  @media (max-width: @mobil-width-only) {
+    padding-left: 30px;
+
+  }
+}
 
 .adv-border {
   @media (max-width: @mobil-width-only) {
@@ -149,13 +176,29 @@
 
   }
 }
-
+@media (max-width: @mobil-width-only) {
+  .br_tablet {
+    display: none;
+  }
+}
 @media (min-width: @tablet-width) {
   .adv-align .advantage__item__title {
     margin-top: 158px;
   }
-}
+  .adv-align .advantage__item__text {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 
+}
+@media (min-width: @desktop-width) {
+
+  .adv-border .advantage__item__text {
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+
+}
 .adv-house {
   position: absolute;
   left: 21px;
