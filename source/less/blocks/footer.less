@@ -1,0 +1,55 @@
+.main-footer {
+  min-width: 100%;
+}
+.visitSedona {
+  font-size: 21px;
+  font-weight: 700;
+
+  margin-top: 39px;
+  margin-bottom: 33px;
+  text-align: center;
+}
+
+.copyright {
+
+  margin-top: 45px;
+  margin-bottom: 26px;
+  text-align: center;
+}
+@media (min-width: @tablet-width) {
+  .visitSedona,
+  .copyright {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.main-footer__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    height: 120px;
+  }
+}
+
+.main-footer__sotial__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.sotial__item {
+  display: flex;
+  align-items: center;
+  width: 46px;
+  height: 48px;
+  background-color: @blue;
+  margin: 0 3px;
+}
+
