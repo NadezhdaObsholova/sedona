@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 
-<head>
-  <meta charset="utf-8">
-  <title>Sedona Form</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sedona Form</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
 <body class="page__body">
 
@@ -12,56 +14,83 @@
 
   <header class="page-header">
 
-    <a class="page-header__logo">
-      <img src="img/logo.svg" width="102" height="84"
-        alt="Логотип сайта Седона">
-    </a>
 
-    <nav class="main-nav">
+    <button class="button--open-menu main-nav--nojs" type="button"
+      aria-label="Открыть меню">
+      <svg class="svg" width="23" height="22" viewBox="0 0 23 22" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2" />
+        <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2" />
+        <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2" />
+      </svg>
 
+    </button>
+
+
+
+    <nav class="main-nav main-nav--nojs">
       <h2 class="visually-hidden">Навигация</h2>
 
-      <button class="main-nav__open-menu" type="button"
-        aria-label="Открыть меню">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
 
-      <button class="main-nav__close-menu" type="button"
-        aria-label="Закрыть меню">
-        <span class="visually-hidden">Закрыть меню</span>
-      </button>
+      <ul class="list main-nav__list">
+        <li class="main-nav__item">
+          <a class="link" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="link" href="catalog.html">Фото и видео</a>
+        </li>
+      </ul>
+      <ul class="list main-nav__list">
+        <li class="main-nav__item">
+          <a class="link" href="form.html">Форма отзыва</a>
+        </li>
+        <li class="main-nav__item main-nav__item--last">
+          <a class="link" href="https://htmlacademy.ru">HTML Academy</a>
+        </li>
 
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html">Фото и видео</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">Форма отзыва</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="https://htmlacademy.ru">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
+      </ul>
+
+
 
     </nav>
+
+
+    <button class="button--close-menu main-nav--nojs" type="button"
+      aria-label="Закрыть меню">
+      <svg class="svg" width="23" height="23" viewBox="0 0 23 23" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z"
+          fill="white" />
+      </svg>
+    </button>
+
+    <a href="" class="link page-header__logo">
+    </a>
+
+
   </header>
 
   <main class="page-main">
     <h2 class="visually-hidden">Форма отзыва</h2>
 
-    <section class="page-main__header">
+    <section class="intro">
 
-      <img src="">
-      <p class="page-main__header__title">Оставьте свой отзыв</p>
-      <p class="page-main__header__text">Помогите нашим отелям стать лучше!
-        Оставьте отзыв о них, а также о посещенных Вами достопримечательностях
-      </p>
+      <h3 class="visually-hidden">Приветствие</h3>
 
+      <div class="intro__main-background">
+        <img class="intro__main__text" src="img/SEDONA.svg">
+      </div>
+
+      <div class="intro__text__wrapper">
+        <p class="intro__title">Седона - небольшой городок в&nbsp;Аризоне,
+          заслуживающий большего!</p>
+        <p class="intro__text">Рассмотрим 5 причин, по которым
+          Седона круче, чем Гранд Каньон!</p>
+      </div>
+      <div class="intro__bottom__wrapper">
+        <div class="intro__bottom"></div>
+      </div>
     </section>
 
     <section class="form">
@@ -183,29 +212,66 @@
 
   <footer class="main-footer">
     <h2 class="visually-hidden">Полезные ссылки</h2>
-    <ul class="main-footer__list">
+    <ul class="list main-footer__list">
       <li class="main-footer__item">
-        <a href="">#VisitSedona</a>
+        <a class="link visitSedona" href="">#VisitSedona</a>
       </li>
       <li class="main-footer__item">
-        <ul class="main-footer__sotial__list">
+        <ul class="list main-footer__sotial__list">
           <li class="main-footer__sotial__item">
-            <a href="">ВКонтакте</a>
+            <a class="link sotial__item" href=""><img class="img" src="img/icon-twitter.svg" alt="Twitter"></a>
           </li>
           <li class="main-footer__sotial__item">
-            <a href="">Facebook</a>
+            <a class="link sotial__item" href=""><img class="img" src="img/icon-facebook.svg" alt="Facebook"></a>
           </li>
           <li class="main-footer__sotial__item">
-            <a href="">Youtube</a>
+            <a class="link sotial__item" href=""><img class="img" src="img/icon-youtube.svg" alt="Youtube"></a>
           </li>
         </ul>
       </li>
       <li class="main-footer__item">
-        <a class="copyright" href="">Разработано</a>
+        <a class="link copyright" href="">Разработано <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="copyright__logo" d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+          </svg></a>
       </li>
     </ul>
   </footer>
 
+  <script>
+    let mainNav = document.querySelector(".main-nav");
+    console.log(mainNav);
+    let buttonClose = document.querySelector(".button--close-menu");
+    console.log(buttonClose);
+    let buttonOpen = document.querySelector(".button--open-menu");
+    console.log(buttonOpen);
+
+    mainNav.classList.remove('main-nav--nojs');
+    buttonClose.classList.remove('main-nav--nojs');
+    buttonOpen.classList.remove('main-nav--nojs');
+
+    buttonOpen.addEventListener('click', function () {
+      if (mainNav.classList.contains('main-nav--nojs')) {
+        return
+      } else {
+        mainNav.classList.add('main-nav--nojs');
+        buttonOpen.classList.add('main-nav--nojs');
+        buttonClose.classList.add('main-nav--nojs');
+      }
+    });
+
+
+    buttonClose.addEventListener('click', function () {
+      if (mainNav.classList.contains('main-nav--nojs')) {
+        mainNav.classList.remove('main-nav--nojs');
+        buttonOpen.classList.remove('main-nav--nojs');
+        buttonClose.classList.remove('main-nav--nojs');
+      } else {
+        return
+      }
+    });
+
+
+  </script>
 </body>
 
 </html>

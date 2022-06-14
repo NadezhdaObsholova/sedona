@@ -1,21 +1,28 @@
 .main-footer {
   min-width: 100%;
 }
+
 .visitSedona {
   font-size: 21px;
   font-weight: 700;
-
   margin-top: 39px;
   margin-bottom: 33px;
   text-align: center;
 }
 
 .copyright {
-
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
   margin-top: 45px;
   margin-bottom: 26px;
   text-align: center;
 }
+
+.copyright .img {
+  margin-left: 10px;
+}
+
 @media (min-width: @tablet-width) {
   .visitSedona,
   .copyright {
@@ -47,9 +54,13 @@
 .sotial__item {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   width: 46px;
   height: 48px;
   background-color: @blue;
   margin: 0 3px;
 }
 
+.copyright__logo {
+  margin-left: 10px;
+}
