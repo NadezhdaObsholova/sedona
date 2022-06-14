@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page form-page" lang="ru">
 
   <head>
     <meta charset="utf-8">
@@ -71,7 +71,7 @@
 
   </header>
 
-  <main class="page-main">
+  <main class="main">
     <h2 class="visually-hidden">Форма отзыва</h2>
 
     <section class="intro">
@@ -83,20 +83,57 @@
       </div>
 
       <div class="intro__text__wrapper">
-        <p class="intro__title">Седона - небольшой городок в&nbsp;Аризоне,
-          заслуживающий большего!</p>
-        <p class="intro__text">Рассмотрим 5 причин, по которым
-          Седона круче, чем Гранд Каньон!</p>
-      </div>
-      <div class="intro__bottom__wrapper">
-        <div class="intro__bottom"></div>
+        <p class="intro__title">Оставьте свой отзыв</p>
+        <p class="intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
     </section>
 
     <section class="form">
       <form method="get" action="https://echo.htmlacademy.ru">
 
+        <h3 class="visually-hidden">Представьтесь</h3>
+        <fieldset class="form__introduce">
+          <legend class="impression__title">Представьтесь</legend>
+          <ul class="introduce__list">
+            <li class="introduce__item">
+              <label for="name">Имя*:</label>
+              <input class="introduce__item__name" type="text" name="name"
+                id="name" placeholder="Пётр">
+            </li>
+            <li class="introduce__item">
+              <label for="surname">Фамилия*:</label>
+              <input class="introduce__item__surname" type="text" name="surname"
+                id="surname" placeholder="Иванов">
+            </li>
+            <li class="introduce__item">
+              <label for="second-name">Отчество:</label>
+              <input class="introduce__item__second-name" type="text"
+                name="second-name" id="second-name" placeholder="Александрович">
+            </li>
+          </ul>
+        </fieldset>
+
         <h3 class="visually-hidden">Общее впечатление</h3>
+
+
+        <h3 class="visually-hidden">Контактная информация</h3>
+        <fieldset class="form__contacts">
+          <legend class="contacts__title">Контактная информация:</legend>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <label for="phone">Контактный телефон*:</label>
+              <input class="contacts__item__phone" type="number" name="phone"
+                id="phone" placeholder="Введите телефон">
+            </li>
+            <li class="contacts__list">
+              <label for="email">Фамилия*:</label>
+              <input class="contacts__item__email" type="text" name="email"
+                id="email" placeholder="Введите e-mail">
+            </li>
+          </ul>
+        </fieldset>
+
+
 
         <fieldset class="form__impression">
           <legend class="impression__title">Ваше общее впечатление</legend>
@@ -119,48 +156,6 @@
 
           </ul>
         </fieldset>
-
-
-        <h3 class="visually-hidden">Представиться</h3>
-        <fieldset class="form__introduce">
-          <legend class="impression__title">Представьтесь</legend>
-          <ul class="introduce__list">
-            <li class="introduce__item">
-              <label for="name">Имя*:</label>
-              <input class="introduce__item__name" type="text" name="name"
-                id="name" placeholder="Пётр">
-            </li>
-            <li class="introduce__item">
-              <label for="surname">Фамилия*:</label>
-              <input class="introduce__item__surname" type="text" name="surname"
-                id="surname" placeholder="Иванов">
-            </li>
-            <li class="introduce__item">
-              <label for="second-name">Отчество:</label>
-              <input class="introduce__item__second-name" type="text"
-                name="second-name" id="second-name" placeholder="Александрович">
-            </li>
-          </ul>
-        </fieldset>
-
-
-        <h3 class="visually-hidden">Контактная информация</h3>
-        <fieldset class="form__contacts">
-          <legend class="contacts__title">Контактная информация:</legend>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <label for="phone">Контактный телефон*:</label>
-              <input class="contacts__item__phone" type="number" name="phone"
-                id="phone" placeholder="Введите телефон">
-            </li>
-            <li class="contacts__list">
-              <label for="email">Фамилия*:</label>
-              <input class="contacts__item__email" type="text" name="email"
-                id="email" placeholder="Введите e-mail">
-            </li>
-          </ul>
-        </fieldset>
-
 
         <h3 class="visually-hidden">Посещенные достопримечательности</h3>
         <fieldset class="attraction">
