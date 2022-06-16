@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html class="page form-page" lang="ru">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sedona Form</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sedona Form</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
 <body class="page__body">
 
@@ -15,10 +15,8 @@
   <header class="page-header">
 
 
-    <button class="button--open-menu main-nav--nojs" type="button"
-      aria-label="Открыть меню">
-      <svg class="svg" width="23" height="22" viewBox="0 0 23 22" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
+    <button class="button--open-menu main-nav--nojs" type="button" aria-label="Открыть меню">
+      <svg class="svg" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2" />
         <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2" />
         <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2" />
@@ -55,10 +53,8 @@
     </nav>
 
 
-    <button class="button--close-menu main-nav--nojs" type="button"
-      aria-label="Закрыть меню">
-      <svg class="svg" width="23" height="23" viewBox="0 0 23 23" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
+    <button class="button--close-menu main-nav--nojs" type="button" aria-label="Закрыть меню">
+      <svg class="svg" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z"
           fill="white" />
@@ -84,73 +80,68 @@
 
       <div class="intro__text__wrapper">
         <p class="intro__title">Оставьте свой отзыв</p>
-        <p class="intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <p class="intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+          достопримечательностях</p>
       </div>
     </section>
 
-    <section class="form">
-      <form method="get" action="https://echo.htmlacademy.ru">
+    <section class="form-wrapper">
+      <form class="form" method="get" action="https://echo.htmlacademy.ru">
 
         <h3 class="visually-hidden">Представьтесь</h3>
-        <fieldset class="form__introduce">
+        <fieldset class="fieldset form__introduce">
           <legend class="impression__title">Представьтесь</legend>
-          <ul class="introduce__list">
+          <ul class="list introduce__list">
             <li class="introduce__item">
               <label for="name">Имя*:</label>
-              <input class="introduce__item__name" type="text" name="name"
-                id="name" placeholder="Пётр">
+              <input class="introduce__item__name" type="text" name="name" id="name" placeholder="Пётр">
             </li>
             <li class="introduce__item">
               <label for="surname">Фамилия*:</label>
-              <input class="introduce__item__surname" type="text" name="surname"
-                id="surname" placeholder="Иванов">
+              <input class="introduce__item__surname" type="text" name="surname" id="surname" placeholder="Иванов">
             </li>
             <li class="introduce__item">
               <label for="second-name">Отчество:</label>
-              <input class="introduce__item__second-name" type="text"
-                name="second-name" id="second-name" placeholder="Александрович">
+              <input class="introduce__item__second-name" type="text" name="second-name" id="second-name"
+                placeholder="Александрович">
             </li>
           </ul>
         </fieldset>
-
-        <h3 class="visually-hidden">Общее впечатление</h3>
 
 
         <h3 class="visually-hidden">Контактная информация</h3>
-        <fieldset class="form__contacts">
+        <fieldset class="fieldset form__contacts">
           <legend class="contacts__title">Контактная информация:</legend>
-          <ul class="contacts__list">
+          <ul class="list contacts__list">
             <li class="contacts__item">
               <label for="phone">Контактный телефон*:</label>
-              <input class="contacts__item__phone" type="number" name="phone"
-                id="phone" placeholder="Введите телефон">
+              <input class="contacts__item__phone" type="number" name="phone" id="phone" placeholder="Введите телефон">
             </li>
             <li class="contacts__list">
               <label for="email">Фамилия*:</label>
-              <input class="contacts__item__email" type="text" name="email"
-                id="email" placeholder="Введите e-mail">
+              <input class="contacts__item__email" type="text" name="email" id="email" placeholder="Введите e-mail">
             </li>
           </ul>
         </fieldset>
 
 
-
-        <fieldset class="form__impression">
+        <h3 class="visually-hidden">Общее впечатление</h3>
+        <fieldset class="fieldset form__impression">
           <legend class="impression__title">Ваше общее впечатление</legend>
-          <ul class="impression__list">
+          <ul class="list impression__list">
             <li class="impression__item">
-              <input class="item__input visualy-hidden" type="radio"
-                name="impression" value="positive" id="radio-positive" checked>
+              <input class="item__input visualy-hidden" type="radio" name="impression" value="positive"
+                id="radio-positive" checked>
               <label for="radio-positive">Скорее положительное</label>
             </li>
             <li class="impression__item">
-              <input class="item__input visualy-hidden" type="radio"
-                name="impression" value="negative" id="radio-negative">
+              <input class="item__input visualy-hidden" type="radio" name="impression" value="negative"
+                id="radio-negative">
               <label for="radio-negative">Скорее негативное</label>
             </li>
             <li class="impression__item">
-              <input class="item__input visualy-hidden" type="radio"
-                name="impression" value="hard_to_say" id="radio-hard_to_say">
+              <input class="item__input visualy-hidden" type="radio" name="impression" value="hard_to_say"
+                id="radio-hard_to_say">
               <label for="radio-hard_to_say">Затрудняюсь ответить</label>
             </li>
 
@@ -158,28 +149,25 @@
         </fieldset>
 
         <h3 class="visually-hidden">Посещенные достопримечательности</h3>
-        <fieldset class="attraction">
+        <fieldset class="fieldset attraction">
           <legend class="attraction__title">Посещенные достопримечательности
           </legend>
-          <ul class="attraction__list">
+          <ul class="list attraction__list">
             <li class="attraction__item">
-              <input class="visualy-hidden item__input" type="checkbox"
-                name="bridge-of-Devil" id="bridge-of-Devil" checked>
+              <input class="visualy-hidden item__input" type="checkbox" name="bridge-of-Devil" id="bridge-of-Devil"
+                checked>
               <label for="bridge-of-Devil">Мост Дьявола</label>
             </li>
             <li class="attraction__item">
-              <input class="visualy-hidden item__input" type="checkbox"
-                name="Bell-mountain" id="Bell-mountain" checked>
+              <input class="visualy-hidden item__input" type="checkbox" name="Bell-mountain" id="Bell-mountain" checked>
               <label for="Bell-mountain">Гора-Колокол</label>
             </li>
             <li class="attraction__item">
-              <input class="visualy-hidden item__input" type="checkbox"
-                name="Slide-park" id="Slide-park" checked>
+              <input class="visualy-hidden item__input" type="checkbox" name="Slide-park" id="Slide-park" checked>
               <label for="Slide-park">Слайд-парк</label>
             </li>
             <li class="attraction__item">
-              <input class="visualy-hidden item__input" type="checkbox"
-                name="red-rocks" id="red-rocks">
+              <input class="visualy-hidden item__input" type="checkbox" name="red-rocks" id="red-rocks">
               <label for="red-rocks">Красные скалы</label>
             </li>
           </ul>
@@ -187,16 +175,15 @@
 
 
         <h3 class="visually-hidden">Описать эмоции</h3>
-        <fieldset class="emotions">
+        <fieldset class="fieldset emotions">
           <legend class="emotions__title">Опишите свои эмоции:</legend>
-          <textarea class="emotions__text" type="text" name="emotions"
-            id="emotions" placeholder="Опишите подробно все свои восторги">
+          <textarea class="emotions__text" type="text" name="emotions" id="emotions"
+            placeholder="Опишите подробно все свои восторги">
           </textarea>
         </fieldset>
 
 
-        <button class="button" type="submit"
-          aria-label="Отправить форму контактов">Отправить отзыв</button>
+        <button class="button" type="submit" aria-label="Отправить форму контактов">Отправить отзыв</button>
 
         <p class="form__text">* - Обязательные поля</p>
 
@@ -225,8 +212,11 @@
         </ul>
       </li>
       <li class="main-footer__item">
-        <a class="link copyright" href="">Разработано <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path class="copyright__logo" d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+        <a class="link copyright" href="">Разработано <svg width="27" height="35" viewBox="0 0 27 35" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path class="copyright__logo"
+              d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+              fill="black" />
           </svg></a>
       </li>
     </ul>
