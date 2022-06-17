@@ -67,7 +67,7 @@
 
   </header>
 
-  <main class="main">
+  <main class="main main--form">
     <h2 class="visually-hidden">Форма отзыва</h2>
 
     <section class="intro">
@@ -88,96 +88,100 @@
     <section class="form-wrapper">
       <form class="form" method="get" action="https://echo.htmlacademy.ru">
 
-        <h3 class="visually-hidden">Представьтесь</h3>
-        <fieldset class="fieldset form__introduce">
-          <legend class="impression__title">Представьтесь</legend>
-          <ul class="list introduce__list">
-            <li class="introduce__item">
-              <label for="name">Имя*:</label>
-              <input class="introduce__item__name" type="text" name="name" id="name" placeholder="Пётр">
+
+        <fieldset class="form__fieldset">
+          <h3 class="visually-hidden">Представьтесь</h3>
+          <legend class="form__legend">Представьтесь</legend>
+          <ul class="list form__list">
+            <li class="form__item">
+              <label class="form__label" for="name">Имя*:</label>
+              <input class="form__input" type="text" name="name" id="name" placeholder="Пётр">
             </li>
-            <li class="introduce__item">
-              <label for="surname">Фамилия*:</label>
-              <input class="introduce__item__surname" type="text" name="surname" id="surname" placeholder="Иванов">
+            <li class="form__item">
+              <label class="form__label" for="surname">Фамилия*:</label>
+              <input class="form__input" type="text" name="surname" id="surname" placeholder="Иванов">
             </li>
-            <li class="introduce__item">
-              <label for="second-name">Отчество:</label>
-              <input class="introduce__item__second-name" type="text" name="second-name" id="second-name"
+            <li class="form__item introduce__item">
+              <label class="form__label" for="second-name">Отчество:</label>
+              <input class="form__input" type="text" name="second-name" id="second-name"
                 placeholder="Александрович">
             </li>
           </ul>
         </fieldset>
 
 
-        <h3 class="visually-hidden">Контактная информация</h3>
-        <fieldset class="fieldset form__contacts">
-          <legend class="contacts__title">Контактная информация:</legend>
-          <ul class="list contacts__list">
-            <li class="contacts__item">
-              <label for="phone">Контактный телефон*:</label>
-              <input class="contacts__item__phone" type="number" name="phone" id="phone" placeholder="Введите телефон">
+
+        <fieldset class="form__fieldset">
+          <h3 class="visually-hidden">Контактная информация</h3>
+          <legend class="form__legend">Контактная информация:</legend>
+          <ul class="list form__list">
+            <li class="form__item">
+              <label class="form__label" for="phone">Контактный телефон*:</label>
+              <input class="form__input" type="number" name="phone" id="phone" placeholder="Введите телефон">
             </li>
-            <li class="contacts__list">
-              <label for="email">Фамилия*:</label>
-              <input class="contacts__item__email" type="text" name="email" id="email" placeholder="Введите e-mail">
+            <li class="form__item">
+              <label class="form__label" for="email">Фамилия*:</label>
+              <input class="form__input" type="text" name="email" id="email" placeholder="Введите e-mail">
             </li>
           </ul>
         </fieldset>
 
 
-        <h3 class="visually-hidden">Общее впечатление</h3>
-        <fieldset class="fieldset form__impression">
-          <legend class="impression__title">Ваше общее впечатление</legend>
-          <ul class="list impression__list">
-            <li class="impression__item">
-              <input class="item__input visualy-hidden" type="radio" name="impression" value="positive"
+
+        <fieldset class="form__fieldset">
+          <h3 class="visually-hidden">Общее впечатление</h3>
+          <legend class="form__legend">Ваше общее впечатление</legend>
+          <ul class="list form__list">
+            <li class="form__item">
+              <input class="form__radio visualy-hidden" type="radio" name="impression" value="positive"
                 id="radio-positive" checked>
-              <label for="radio-positive">Скорее положительное</label>
+              <label class="form__label" for="radio-positive">Скорее положительное</label>
             </li>
-            <li class="impression__item">
-              <input class="item__input visualy-hidden" type="radio" name="impression" value="negative"
+            <li class="form__item">
+              <input class="form__radio visualy-hidden" type="radio" name="impression" value="negative"
                 id="radio-negative">
-              <label for="radio-negative">Скорее негативное</label>
+              <label class="form__label" for="radio-negative">Скорее негативное</label>
             </li>
-            <li class="impression__item">
-              <input class="item__input visualy-hidden" type="radio" name="impression" value="hard_to_say"
+            <li class="form__item">
+              <input class="form__radio visualy-hidden" type="radio" name="impression" value="hard_to_say"
                 id="radio-hard_to_say">
-              <label for="radio-hard_to_say">Затрудняюсь ответить</label>
+              <label class="form__label" for="radio-hard_to_say">Затрудняюсь ответить</label>
             </li>
 
           </ul>
         </fieldset>
 
-        <h3 class="visually-hidden">Посещенные достопримечательности</h3>
-        <fieldset class="fieldset attraction">
-          <legend class="attraction__title">Посещенные достопримечательности
+
+        <fieldset class="form__fieldset">
+          <h3 class="visually-hidden">Посещенные достопримечательности</h3>
+          <legend class="form__legend">Посещенные достопримечательности
           </legend>
-          <ul class="list attraction__list">
-            <li class="attraction__item">
-              <input class="visualy-hidden item__input" type="checkbox" name="bridge-of-Devil" id="bridge-of-Devil"
+          <ul class="list form__list">
+            <li class="form__item">
+              <input class="visualy-hidden form__checkbox" type="checkbox" name="bridge-of-Devil" id="bridge-of-Devil"
                 checked>
-              <label for="bridge-of-Devil">Мост Дьявола</label>
+              <label class="form__label" for="bridge-of-Devil">Мост Дьявола</label>
             </li>
-            <li class="attraction__item">
-              <input class="visualy-hidden item__input" type="checkbox" name="Bell-mountain" id="Bell-mountain" checked>
-              <label for="Bell-mountain">Гора-Колокол</label>
+            <li class="form__item">
+              <input class="visualy-hidden form__checkbox" type="checkbox" name="Bell-mountain" id="Bell-mountain" checked>
+              <label class="form__label" for="Bell-mountain">Гора-Колокол</label>
             </li>
-            <li class="attraction__item">
-              <input class="visualy-hidden item__input" type="checkbox" name="Slide-park" id="Slide-park" checked>
-              <label for="Slide-park">Слайд-парк</label>
+            <li class="form__item">
+              <input class="visualy-hidden form__checkbox" type="checkbox" name="Slide-park" id="Slide-park" checked>
+              <label class="form__label" for="Slide-park">Слайд-парк</label>
             </li>
-            <li class="attraction__item">
-              <input class="visualy-hidden item__input" type="checkbox" name="red-rocks" id="red-rocks">
-              <label for="red-rocks">Красные скалы</label>
+            <li class="form__item">
+              <input class="visualy-hidden form__checkbox" type="checkbox" name="red-rocks" id="red-rocks">
+              <label class="form__label" for="red-rocks">Красные скалы</label>
             </li>
           </ul>
         </fieldset>
 
 
-        <h3 class="visually-hidden">Описать эмоции</h3>
-        <fieldset class="fieldset emotions">
-          <legend class="emotions__title">Опишите свои эмоции:</legend>
-          <textarea class="emotions__text" type="text" name="emotions" id="emotions"
+        <fieldset class="form__fieldset">
+          <h3 class="visually-hidden">Описать эмоции</h3>
+          <legend class="form__legend">Опишите свои эмоции:</legend>
+          <textarea class="form__textarea" type="text" name="emotions" id="emotions"
             placeholder="Опишите подробно все свои восторги">
           </textarea>
         </fieldset>
