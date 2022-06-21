@@ -10,7 +10,29 @@
 }
 
 .button {
+  display: block;
+  width: 280px;
+  height: 58px;
   border: none;
+  padding: 0;
+  margin-bottom: 49px;
+  font-family: "PT Sans";
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 24px;
+  color: @white;
+  text-transform: uppercase;
+  background-color: @blue;
+
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 66px;
+  }
 }
 
 .page__body {
@@ -30,24 +52,27 @@
 }
 
 
-  .br-desktop,
-  .br-tablet {
-    display: none;
-  }
+.br-desktop,
+.br-tablet {
+  display: none;
+}
 
 
 @media (min-width: @tablet-width) {
   .br-tablet {
     display: inline;
   }
+
   .br-desktop {
     display: none;
   }
 }
+
 @media (min-width: @desktop-width) {
   .br-desktop {
     display: inline;
   }
+
   .br-tablet {
     display: none;
   }
