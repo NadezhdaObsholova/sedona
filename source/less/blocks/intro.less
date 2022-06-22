@@ -26,7 +26,7 @@
   }
 }
 
-.form-page .intro__main-background {
+.any-page .intro__main-background {
   height: 158px;
   background-position: bottom;
   background-size: auto auto;
@@ -51,7 +51,7 @@
   }
 }
 
-.form-page .intro__main__text {
+.any-page .intro__main__text {
   width: 229px;
   height: 39px;
   margin-top: 52px;
@@ -81,8 +81,7 @@
   }
 }
 
-.main--form .intro__text__wrapper {
-
+.main--any-page .intro__text__wrapper {
   padding: 0 20px 5px 20px;
 }
 
@@ -99,11 +98,11 @@
 
     @media (min-width: @tablet-width) {
       font-size: 21px;
-      margin-top: 44px;
+      margin-top: 64px;
     }
 
     @media (min-width: @desktop-width) {
-      margin-top: 55px;
+      margin-top: 114px;
     }
   }
 
@@ -111,19 +110,45 @@
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 11px;
+    line-height: 24px;
 
     @media (min-width: @tablet-width) {
       margin-bottom: 52px;
     }
-  }
 
-  @media (min-width: @desktop-width) {
-    margin-bottom: 41px;
+    @media (min-width: @desktop-width) {
+      margin-bottom: 41px;
+    }
   }
 }
 
+
+.main--any-page .intro__text {
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 435px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.any-page .intro__text {
+  margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 31px;
+  }
+}
 @media (max-width: @mobil-width-only) {
-  .form-page .intro {
+  .any-page .intro {
     box-shadow: 0 1px 0 hsl(0, 0%, 90%);
   }
 }

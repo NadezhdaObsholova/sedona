@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page form-page" lang="ru">
+<html class="page any-page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -61,13 +61,13 @@
       </svg>
     </button>
 
-    <a href="" class="link page-header__logo">
+    <a href="index.html" class="link page-header__logo">
     </a>
 
 
   </header>
 
-  <main class="main main--form">
+  <main class="main main--any-page">
     <h2 class="visually-hidden">Форма отзыва</h2>
 
     <section class="intro">
@@ -103,8 +103,7 @@
             </li>
             <li class="form__item form__item--introduce">
               <label class="form__label" for="second-name">Отчество:</label>
-              <input class="form__input" type="text" name="second-name" id="second-name"
-                placeholder="Александрович">
+              <input class="form__input" type="text" name="second-name" id="second-name" placeholder="Александрович">
             </li>
           </ul>
         </fieldset>
@@ -114,14 +113,19 @@
         <fieldset class="form__fieldset form__fieldset--contacts">
           <h3 class="visually-hidden">Контактная информация</h3>
           <legend class="form__legend form__legend--contacts">Контактная информация:</legend>
-          <ul class="list form__list">
+          <ul class="list form__list form__list--contacts">
             <li class="form__item form__item--contacts">
-              <label class="form__label form__label--contacts" for="phone">Контактный телефон*:</label>
-              <input class="form__input form__input--contacts" type="number" name="phone" id="phone" placeholder="Введите телефон">
+              <label class="form__label form__label--contacts phone-mobile-tablet" for="phone">Контактный
+                телефон*:</label>
+              <label class="form__label form__label--contacts phone-desktop" for="phone">Телефон*:</label>
+              <input class="form__input form__input--contacts" type="number" name="phone" id="phone"
+                placeholder="Введите телефон">
+              
             </li>
             <li class="form__item form__item--contacts">
-              <label class="form__label form__label--contacts" for="email">Фамилия*:</label>
-              <input class="form__input form__input--contacts" type="text" name="email" id="email" placeholder="Введите e-mail">
+              <label class="form__label form__label--contacts" for="email">Электронная почта*:</label>
+              <input class="form__input form__input--contacts" type="text" name="email" id="email"
+                placeholder="Введите e-mail">
             </li>
           </ul>
         </fieldset>
@@ -135,7 +139,7 @@
 
             <li class="form__item form__item--impression">
               <input class="form__radio visually-hidden" type="radio" name="impression" value="positive"
-                id="radio-positive" checked>
+                id="radio-positive">
               <label class="form__label form__label--impression" for="radio-positive">Скорее положительное</label>
             </li>
 
@@ -157,23 +161,22 @@
 
         <fieldset class="form__fieldset form__fieldset--attraction">
           <h3 class="visually-hidden">Посещенные достопримечательности</h3>
-          <legend class="form__legend form__legend--attraction">Посещенные достопримечательности:
+          <legend class="form__legend form__legend--attraction">Посещенные<br> достопримечательности:
           </legend>
           <ul class="list form__list form__list--attraction">
-            <li class="form__item form__item--checkbox">
-              <input class="visually-hidden form__checkbox" type="checkbox" name="bridge-of-Devil" id="bridge-of-Devil"
-                checked>
+            <li class="form__item form__item--attraction">
+              <input class="visually-hidden form__checkbox" type="checkbox" name="bridge-of-Devil" id="bridge-of-Devil">
               <label class="form__label form__label--attraction" for="bridge-of-Devil">Мост Дьявола</label>
             </li>
-            <li class="form__item form__item--checkbox">
-              <input class="visually-hidden form__checkbox" type="checkbox" name="Bell-mountain" id="Bell-mountain" checked>
+            <li class="form__item form__item--attraction">
+              <input class="visually-hidden form__checkbox" type="checkbox" name="Bell-mountain" id="Bell-mountain">
               <label class="form__label form__label--attraction" for="Bell-mountain">Гора-Колокол</label>
             </li>
-            <li class="form__item form__item--checkbox">
-              <input class="visually-hidden form__checkbox" type="checkbox" name="Slide-park" id="Slide-park" checked>
+            <li class="form__item form__item--attraction">
+              <input class="visually-hidden form__checkbox" type="checkbox" name="Slide-park" id="Slide-park">
               <label class="form__label form__label--attraction" for="Slide-park">Слайд-парк</label>
             </li>
-            <li class="form__item form__item--checkbox">
+            <li class="form__item form__item--attraction">
               <input class="visually-hidden form__checkbox" type="checkbox" name="red-rocks" id="red-rocks">
               <label class="form__label form__label--attraction" for="red-rocks">Красные скалы</label>
             </li>
@@ -185,13 +188,16 @@
           <h3 class="visually-hidden">Описать эмоции</h3>
           <legend class="form__legend form__legend--review">Опишите свои эмоции:</legend>
           <textarea class="form__textarea" type="text" name="emotions" id="emotions"
-          placeholder="Опишите подробно все свои восторги"></textarea>
+            placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
 
 
-        <button class="button button--form" type="submit" aria-label="Отправить форму контактов">Отправить отзыв</button>
+        <button class="button button--form" type="submit" aria-label="Отправить форму контактов">Отправить
+          отзыв</button>
 
-        <div class="form__text--wrapper"> <p class="form__text">* - Обязательные поля</p></div>
+        <div class="form__text--wrapper">
+          <p class="form__text">* - Обязательные поля</p>
+        </div>
 
       </form>
     </section>
