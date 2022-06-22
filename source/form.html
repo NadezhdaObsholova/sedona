@@ -89,9 +89,9 @@
       <form class="form" method="get" action="https://echo.htmlacademy.ru">
 
 
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--introduce">
           <h3 class="visually-hidden">Представьтесь</h3>
-          <legend class="form__legend">Представьтесь</legend>
+          <legend class="form__legend form__legend--introduce">Представьтесь:</legend>
           <ul class="list form__list">
             <li class="form__item form__item--introduce">
               <label class="form__label" for="name">Имя*:</label>
@@ -113,7 +113,7 @@
 
         <fieldset class="form__fieldset form__fieldset--contacts">
           <h3 class="visually-hidden">Контактная информация</h3>
-          <legend class="form__legend">Контактная информация:</legend>
+          <legend class="form__legend form__legend--contacts">Контактная информация:</legend>
           <ul class="list form__list">
             <li class="form__item form__item--contacts">
               <label class="form__label form__label--contacts" for="phone">Контактный телефон*:</label>
@@ -128,24 +128,24 @@
 
 
 
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--impression">
           <h3 class="visually-hidden">Общее впечатление</h3>
-          <legend class="form__legend">Ваше общее впечатление:</legend>
+          <legend class="form__legend form__legend--impression">Ваше общее впечатление:</legend>
           <ul class="list form__list">
 
-            <li class="form__item form__item--radio">
+            <li class="form__item form__item--impression">
               <input class="form__radio visually-hidden" type="radio" name="impression" value="positive"
                 id="radio-positive" checked>
               <label class="form__label form__label--impression" for="radio-positive">Скорее положительное</label>
             </li>
 
-            <li class="form__item form__item--radio">
+            <li class="form__item form__item--impression">
               <input class="form__radio visually-hidden" type="radio" name="impression" value="negative"
                 id="radio-negative">
-              <label class="form__label form__label--impression" for="radio-negative">Скорее негативное</label>
+              <label class="form__label form__label--impression" for="radio-negative">Скорее отрицательное</label>
             </li>
 
-            <li class="form__item form__item--radio">
+            <li class="form__item form__item--impression">
               <input class="form__radio visually-hidden" type="radio" name="impression" value="hard_to_say"
                 id="radio-hard_to_say">
               <label class="form__label form__label--impression" for="radio-hard_to_say">Затрудняюсь ответить</label>
@@ -155,11 +155,11 @@
         </fieldset>
 
 
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--attraction">
           <h3 class="visually-hidden">Посещенные достопримечательности</h3>
-          <legend class="form__legend">Посещенные достопримечательности:
+          <legend class="form__legend form__legend--attraction">Посещенные достопримечательности:
           </legend>
-          <ul class="list form__list">
+          <ul class="list form__list form__list--attraction">
             <li class="form__item form__item--checkbox">
               <input class="visually-hidden form__checkbox" type="checkbox" name="bridge-of-Devil" id="bridge-of-Devil"
                 checked>
@@ -181,9 +181,9 @@
         </fieldset>
 
 
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--review">
           <h3 class="visually-hidden">Описать эмоции</h3>
-          <legend class="form__legend">Опишите свои эмоции:</legend>
+          <legend class="form__legend form__legend--review">Опишите свои эмоции:</legend>
           <textarea class="form__textarea" type="text" name="emotions" id="emotions"
           placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
@@ -191,7 +191,7 @@
 
         <button class="button button--form" type="submit" aria-label="Отправить форму контактов">Отправить отзыв</button>
 
-        <p class="form__text">* - Обязательные поля</p>
+        <div class="form__text--wrapper"> <p class="form__text">* - Обязательные поля</p></div>
 
       </form>
     </section>
