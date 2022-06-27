@@ -97,6 +97,7 @@
 
       <div class="catalog__photo">
         <dl class="photo__list">
+
           <div class="photo__item">
             <dt class="photo__img">
 
@@ -105,7 +106,7 @@
                   srcset="img/catalog/catalog-648-@1.jpg 1x, img/catalog/catalog-648-@2.jpg 2x, img/catalog/catalog-648-@3.jpg 3x">
                 <img class="img catalog__img"
                   src="img/catalog/catalog-1200-@1.jpg"
-                  srcset="catalog/catalog-1200-@2/jpg 2x, img/catalog/catalog-1200-@3/jpg 3x">
+                  srcset="catalog/catalog-1200-@2.jpg 2x, img/catalog/catalog-1200-@3.jpg 3x">
               </picture>
 
 
@@ -124,7 +125,14 @@
 
           <div class="photo__item">
             <dt class="photo__img">
-              <img src="">
+                <picture class="photo__wrapper">
+                <source media="(max-width: 648px)"
+                  srcset="img/catalog/catalog-2-1200-@1.jpg 1x">
+                <img class="img catalog__img"
+                  src="img/catalog/catalog-2-1200-@1.jpg"
+                  srcset="">
+              </picture>
+
             </dt>
             <dd class="photo__description">
               <p class="description__about">Местная растительность
@@ -141,7 +149,12 @@
 
           <div class="photo__item">
             <dt class="photo__img">
-              <img src="">
+              <picture class="photo__wrapper">
+                <source media="(max-width: 648px)"
+                  srcset="img/catalog/catalog-3-1200-@1.jpg 1x">
+                <img class="img catalog__img"
+                  src="img/catalog/catalog-3-1200-@1.jpg"
+                  srcset="">
             </dt>
             <dd class="photo__description">
               <p class="description__about">Дорога на север</p>
@@ -157,7 +170,12 @@
 
           <div class="photo__item">
             <dt class="photo__img">
-              <img src="">
+              <picture class="photo__wrapper">
+                <source media="(max-width: 648px)"
+                  srcset="img/catalog/catalog-4-1200-@1.jpg 1x">
+                <img class="img catalog__img"
+                  src="img/catalog/catalog-4-1200-@1.jpg"
+                  srcset="">
             </dt>
             <dd class="photo__description">
               <p class="description__about">Мост Дьявола</p>
