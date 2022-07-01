@@ -6,14 +6,14 @@
 /*УБИРАЕМ СТРЕЛКИ В INPUT TYPE=NUMBER*/
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none; // Yeah, yeah everybody write about it
+  -webkit-appearance: none; // Yeah, yeah everybody write about it
 }
 
 input[type='number'],
 input[type="number"]:hover,
 input[type="number"]:focus {
-    appearance: none;
-    -moz-appearance: textfield;
+  appearance: none;
+  -moz-appearance: textfield;
 }
 
 .img {
@@ -35,17 +35,30 @@ input[type="number"]:focus {
   color: @white;
   text-transform: uppercase;
   background-color: @blue;
-
-
-  @media (min-width: @tablet-width) {
-    width: 458px;
-    margin-bottom: 58px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-bottom: 66px;
-  }
 }
+
+.button--disable {
+  background-color: @dark-gray;
+}
+
+.button:hover {
+  background-color: @blue-hover;
+}
+
+.button:active {
+  background-color: @blue-active;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: @tablet-width) {
+  width: 458px;
+  margin-bottom: 58px;
+}
+
+@media (min-width: @desktop-width) {
+  margin-bottom: 66px;
+}
+
 
 .page__body {
   @media (min-width: @tablet-width) {
